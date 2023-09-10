@@ -16,8 +16,8 @@ app.get('/api', (req, res) => {
         current_day: dateToday,
         utc_time: utcTime,
         track,
-        github_file_url: '',
-        github_repo_url:'',
+        github_file_url: 'https://github.com/oluwajueda/hng_first_task/blob/main/index.js',
+        github_repo_url:'https://github.com/oluwajueda/hng_first_task',
         status_code: 200,
     }
 
