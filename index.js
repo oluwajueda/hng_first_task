@@ -11,7 +11,8 @@ app.get('/api', (req, res) => {
     const timeNow = new Date();
 
     const dateToday = timeNow.toLocaleDateString('en-US', {weekday: 'long'});
-    const utcTime = timeNow.toISOString();
+    const utcTime = timeNow.toISOString().slice(0,19) + "Z";
+    console.log(utcTime);
 
     const response = {
         slack_name,
